@@ -8,6 +8,7 @@ import { Contact } from './components/Contact';
 import { Experience } from './components/Experience';
 import { Awards } from './components/Awards';
 import { Starfield } from './components/Starfield';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
       }}>
         <p>© {new Date().getFullYear()} Portfolio. All rights reserved.</p>
       </footer>
+      <Analytics />
     </>
   );
 }
